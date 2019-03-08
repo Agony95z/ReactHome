@@ -1,10 +1,20 @@
 import React, { Component } from 'react';
+import { BrowserRouter, Route, Switch } from "react-router-dom";
 import './App.css';
+
+// 导入Login和Main
+import Login from './login'
+import Main from './module/main'
 
 class App extends Component {
   render() {
     return (
-      <div className="App">1234</div>
+      <BrowserRouter>
+        <Switch>
+          <Route exact path="/" component={Login}/>
+          <Route path="/home" component={Main}/>
+        </Switch>
+      </BrowserRouter>
     );
   }
 }

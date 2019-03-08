@@ -1,0 +1,26 @@
+.login-container {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  top: 0;
+  right: 0;
+  background-color: red;
+}
+.login-container .login-logo {
+  background-color: green;
+  text-align: center;
+  height: 240px;
+  line-height: 240px;
+}
+.login-container .login-form {
+  margin: 0 5px;
+  padding: 10px;
+  box-sizing: border-box;
+}
+.login-container .iconfont {
+  text-align: center;
+  display: flex;
+}
+.login-container .iconfont i {
+  flex: 1;
+}
